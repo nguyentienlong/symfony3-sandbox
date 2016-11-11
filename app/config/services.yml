@@ -9,3 +9,9 @@ services:
         class: AppBundle\EventListener\UploadListener
         tags:
             - { name: kernel.event_listener, event: oneup_uploader.post_persist }
+
+    # oneup_uploadere event subscriber
+    # app.subscriber.post_persist_event:
+    #     class: AppBundle\EventSubscriber\UploadSubscriber
+    #     tags:
+    #         - { name: kernel.event_subscriber }
