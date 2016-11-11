@@ -9,6 +9,7 @@ Visit `http://127.0.0.1:8000/upload`
 
 
 What I know to demo here:
+
 1. `Event listener` vs `Subscriber`
 2. Use bower (bowerrc) to manage front-end dependencies (web/assets/vendor)
 3. Jquery file uploader
