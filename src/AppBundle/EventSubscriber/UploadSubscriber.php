@@ -4,13 +4,14 @@ namespace AppBundle\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Oneup\UploaderBundle\Event\PostPersistEvent;
+use Oneup\UploaderBundle\UploadEvents;
 
 class UploadSubscriber implements EventSubscriberInterface
 {
     public static function getSubscribedEvents()
     {
         return array(
-            'oneup_uploader.post_persist' => array(
+            UploadEvents::POST_PERSIST => array(
                 array('handler1', 10),
                 //array('handler2', 5)
             )
