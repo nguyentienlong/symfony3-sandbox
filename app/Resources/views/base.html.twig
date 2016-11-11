@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <!-- Bootstrap -->
+        <link href="{{ asset( front_end_resource_vendor_path ~ 'bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{asset( front_end_resource_vendor_path ~ 'jquery/dist/jquery.js')}}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{asset( front_end_resource_vendor_path ~ 'bootstrap/dist/js/bootstrap.js')}}"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "sandbox",
+  "authors": [
+    "longkyanh <nguyentienlong88@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "jquery": "~3.1.1",
+    "blueimp-file-upload": "~9.14.0"
+  }
+}
