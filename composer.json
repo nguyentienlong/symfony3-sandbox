@@ -4,11 +4,15 @@
     "type": "project",
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
-        "psr-4": { "": "src/" },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": ["app/AppKernel.php", "app/AppCache.php"]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" }
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "require": {
         "php": ">=5.5.9",
@@ -38,7 +42,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ],
         "post-install-cmd": [
-            "@symfony-scripts"
+            "@symfony-scripts",
+            "bower install"
         ],
         "post-update-cmd": [
             "@symfony-scripts"
